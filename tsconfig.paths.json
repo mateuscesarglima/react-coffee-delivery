@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@Containers/*": ["./containers/*"],
+      "@Components/*": ["./components/*"],
+      "@Types": ["./types/index.ts"],
+      "@Context/*": ["./context/*"],
+      "@Hooks/*": ["./hooks/*"],
+      "@Services/*": ["./services/*"],
+      "@Constants/*": ["./constants/*"],
+      "@Assets/*": ["./assets/images/*"],
+      "@utils/*": ["./utils/*"],
+      "@reducers/*": ["./reducers/*"]
+    }
+  }
+}
