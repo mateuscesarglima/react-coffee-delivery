@@ -1,11 +1,17 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
-function App() {
+export const App = () => {
+  const arr = ['mateus', 'felipe', 'rodrigo']
+  const [showText, setShowText] = useState(false)
   return (
-    <>
-      <p>testando</p>
-    </>
+    <div>
+      <div>
+        {arr.map((obj) => (
+          <li key={obj}>{obj}</li>
+        ))}
+      </div>
+      <button onClick={() => setShowText(!showText)}>Show text</button>
+      {showText && <p>Apareci</p>}
+    </div>
   )
 }
-
-export default App

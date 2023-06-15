@@ -14,9 +14,10 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "eslint-plugin-prettier"],
+  "plugins": ["react", "eslint-plugin-prettier"],
   "rules": {
     "prettier/prettier": "error",
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "react/react-in-jsx-scope": "off"
   }
 }
